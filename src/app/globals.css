@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --mainColor: #d9d9d9;
+  --mainThemeColor: #19c07b;
+}
+
+@layer components {
+  .center-element {
+    @apply flex justify-center items-center;
+  }
+
+  .infoText {
+    @apply flex-1 basis-2/4 border border-solid border-black max-w-[300px] p-2 rounded-lg cursor-pointer;
+  }
+
+  .hideScrollBar::-webkit-scrollbar,  .ScrollBar::-webkit-scrollbar {
+    width: 5px;
+    color: white;
+  }
+
+  .hideScrollBar::-webkit-scrollbar-track-piece{
+    background: black;
+    /* border:  1px solid black; */
+    border-radius: 10px;
+  }
+  .ScrollBar::-webkit-scrollbar-track-piece {
+    background: white;
+    border-radius: 10px;
+  }
+
+  .ScrollBar::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: rgb(31, 31, 31);
+  }
+
+  .hideScrollBar::-webkit-scrollbar-thumb{
+    /* border:  1px solid grey; */
+    border-radius: 10px;
+    background: rgb(31, 31, 31);
+  }
+}
